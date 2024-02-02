@@ -1,0 +1,19 @@
+<% layout('/layouts/boilerplate') %>
+
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading ">
+                    <%= err.message %>
+                </h4>
+                <p> Page Not Found</p>
+        <!-- Can use this in development to find the error -->
+        <% if (process.env.NODE_ENV !== "production") { %>
+                <p>
+                    <%= err.stack %> 
+                </p>
+                <% } %>
+            </div>
+        </div>
+    </div>
