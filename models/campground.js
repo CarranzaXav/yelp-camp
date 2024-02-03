@@ -1,6 +1,7 @@
 //First require mongoose and shorten mongoose.Schema
 const mongoose = require("mongoose");
 const User = require("./user");
+const Review = require("./review");
 const Schema = mongoose.Schema;
 
 // https://res.cloudinary.com/douqbebwk/image/upload/w_300/v1600113904/YelpCamp/gxgle1ovzd2f3dgcpass.png
